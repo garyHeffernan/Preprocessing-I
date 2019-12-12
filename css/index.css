@@ -1,1 +1,337 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+.font-class {
+  color: black;
+  font-size: 18px;
+  font-family: 'EB Garamond', serif;
+}
+.flex {
+  display: flex;
+}
+* {
+  box-sizing: border-box;
+}
+#wrap {
+  padding: 5%;
+}
+html,
+body {
+  height: 100%;
+  background-color: #DCDCDC;
+  color: black;
+  font-size: 18px;
+  font-family: 'EB Garamond', serif;
+  font-size: 62.5%;
+}
+#img-div {
+  width: 30%;
+}
+.logo {
+  max-width: 100%;
+}
+.section-wrap1 {
+  display: flex;
+  justify-content: center;
+}
+nav {
+  width: 100%;
+  height: 10vh;
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  text-decoration: none;
+}
+.section-wrap2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  padding-bottom: 3%;
+}
+.section-wrap2 #stack-div {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  width: 50%;
+}
+.section-wrap2 #stack-div #intro-div,
+.section-wrap2 #stack-div #tech-div,
+.section-wrap2 #stack-div #blurb-div {
+  padding: 7.5% 0% 0% 0%;
+}
+.section-wrap2 h1 {
+  font-size: 3rem;
+}
+.section-wrap2 p {
+  font-size: 2.5rem;
+}
+#bottom-contain {
+  display: flex;
+  padding: 0% 7.5%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 2.5rem;
+}
+#bottom-contain h2 {
+  font-size: 3rem;
+}
+#bottom-contain .section-wrap3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#bottom-contain .section-wrap3 div {
+  padding: 5%;
+  width: 50%;
+}
+#bottom-contain .section-wrap4 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#bottom-contain .section-wrap4 div {
+  padding: 5%;
+  width: 50%;
+}
+#bottom-contain .section-wrap4 div p {
+  padding: 5%;
+}
+footer {
+  padding: 2% 7.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+footer p {
+  padding: 0.5% 0%;
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    height: 100%;
+    background-color: #00FF00;
+    color: black;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    font-size: 45%;
+  }
+  #img-div {
+    width: 30%;
+  }
+  .logo {
+    max-width: 100%;
+  }
+  .section-wrap1 {
+    display: flex;
+    justify-content: center;
+  }
+  nav {
+    width: 100%;
+    height: 10vh;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  nav a {
+    text-decoration: none;
+  }
+  .section-wrap2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    padding-bottom: 3%;
+  }
+  .section-wrap2 #stack-div {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    width: 50%;
+  }
+  .section-wrap2 #stack-div #intro-div,
+  .section-wrap2 #stack-div #tech-div,
+  .section-wrap2 #stack-div #blurb-div {
+    padding: 7.5% 0% 0% 0%;
+  }
+  .section-wrap2 h1 {
+    font-size: 3rem;
+  }
+  .section-wrap2 p {
+    font-size: 2.5rem;
+  }
+  #bottom-contain {
+    display: flex;
+    padding: 0% 7.5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 2.5rem;
+  }
+  #bottom-contain h2 {
+    font-size: 3rem;
+  }
+  #bottom-contain .section-wrap3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  #bottom-contain .section-wrap3 div {
+    padding: 5%;
+    width: 50%;
+  }
+  #bottom-contain .section-wrap4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #bottom-contain .section-wrap4 div {
+    padding: 5%;
+    width: 50%;
+  }
+  #bottom-contain .section-wrap4 div p {
+    padding: 5%;
+  }
+  footer {
+    padding: 2% 7.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+  }
+  footer p {
+    padding: 0.5% 0%;
+  }
+}
